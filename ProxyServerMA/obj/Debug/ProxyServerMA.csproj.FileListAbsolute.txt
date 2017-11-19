@@ -1,0 +1,16 @@
+c:\users\admin\documents\visual studio 2015\Projects\ProxyServerMA\ProxyServerMA\bin\Debug\ProxyServerMA.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\ProxyServerMA\ProxyServerMA\bin\Debug\ProxyServerMA.exe
+c:\users\admin\documents\visual studio 2015\Projects\ProxyServerMA\ProxyServerMA\bin\Debug\ProxyServerMA.pdb
+c:\users\admin\documents\visual studio 2015\Projects\ProxyServerMA\ProxyServerMA\obj\Debug\ProxyServerMA.exe
+c:\users\admin\documents\visual studio 2015\Projects\ProxyServerMA\ProxyServerMA\obj\Debug\ProxyServerMA.pdb
+c:\users\admin\documents\visual studio 2015\Projects\ProxyServerMA\ProxyServerMA\bin\Debug\System.Net.Http.dll
+c:\users\admin\documents\visual studio 2015\Projects\ProxyServerMA\ProxyServerMA\bin\Debug\System.Net.Http.xml
+c:\users\admin\documents\visual studio 2015\Projects\ProxyServerMA\ProxyServerMA\obj\Debug\ProxyServerMA.csprojResolveAssemblyReference.cache
+C:\Users\MUHAMMED-PC\Documents\Visual Studio 2017\Projects\ONCEKI_PROJELER\ProxyServerMA\ProxyServerMA\bin\Debug\ProxyServerMA.exe.config
+C:\Users\MUHAMMED-PC\Documents\Visual Studio 2017\Projects\ONCEKI_PROJELER\ProxyServerMA\ProxyServerMA\bin\Debug\ProxyServerMA.exe
+C:\Users\MUHAMMED-PC\Documents\Visual Studio 2017\Projects\ONCEKI_PROJELER\ProxyServerMA\ProxyServerMA\bin\Debug\ProxyServerMA.pdb
+C:\Users\MUHAMMED-PC\Documents\Visual Studio 2017\Projects\ONCEKI_PROJELER\ProxyServerMA\ProxyServerMA\bin\Debug\System.Net.Http.dll
+C:\Users\MUHAMMED-PC\Documents\Visual Studio 2017\Projects\ONCEKI_PROJELER\ProxyServerMA\ProxyServerMA\obj\Debug\ProxyServerMA.csprojResolveAssemblyReference.cache
+C:\Users\MUHAMMED-PC\Documents\Visual Studio 2017\Projects\ONCEKI_PROJELER\ProxyServerMA\ProxyServerMA\obj\Debug\ProxyServerMA.csproj.CoreCompileInputs.cache
+C:\Users\MUHAMMED-PC\Documents\Visual Studio 2017\Projects\ONCEKI_PROJELER\ProxyServerMA\ProxyServerMA\obj\Debug\ProxyServerMA.exe
+C:\Users\MUHAMMED-PC\Documents\Visual Studio 2017\Projects\ONCEKI_PROJELER\ProxyServerMA\ProxyServerMA\obj\Debug\ProxyServerMA.pdb
