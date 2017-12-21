@@ -132,16 +132,14 @@ namespace ProxyServerMA
 
                                             var _tcp = _accept;
                                             int _maxErrorCount = 10;
-                                            int _readBuffer = _tcp.ReceiveBufferSize;
-                                            int _readBufferServer = _tcpWriter.ReceiveBufferSize;
                                             var _networkStream = new NetworkStream(_accept);
                                             var _networkStreamServer = _tcpWriter.GetStream();
 
                                             _clientsNS.Add(_networkStream);
                                             _clientsServerNS.Add(_networkStreamServer);
 
-                                            var _buffer = new byte[_readBuffer];
-                                            var _bufferServer = new byte[_readBufferServer];
+                                            var _buffer = new byte[_tcp.ReceiveBufferSize];
+                                            var _bufferServer = new byte[_tcpWriter.ReceiveBufferSize];
                                             #endregion
 
                                             #region Read Thread
@@ -153,11 +151,12 @@ namespace ProxyServerMA
                                                     {
                                                         try
                                                         {
+                                                            _buffer = new byte[_tcp.ReceiveBufferSize];
                                                             var _len = _networkStream.Read(_buffer, 0, _buffer.Length);
                                                             if (_len > 0)
                                                             {
                                                                 _networkStreamServer.Write(_buffer, 0, _len);
-
+                                                                _networkStreamServer.Flush();
                                                                 if (!_consoleDisable)
                                                                 {
                                                                     string _result = System.Text.Encoding.UTF8.GetString(_buffer, 0, _len);
@@ -166,7 +165,7 @@ namespace ProxyServerMA
                                                                 }
                                                             }
                                                             else
-                                                                Thread.Sleep(1000);
+                                                                Thread.Sleep(1);
                                                         }
                                                         #region Error
                                                         catch
@@ -194,11 +193,12 @@ namespace ProxyServerMA
                                                     {
                                                         try
                                                         {
+                                                            _bufferServer = new byte[_tcpWriter.ReceiveBufferSize];
                                                             var _len = _networkStreamServer.Read(_bufferServer, 0, _bufferServer.Length);
                                                             if (_len > 0)
                                                             {
                                                                 _networkStream.Write(_bufferServer, 0, _len);
-
+                                                                _networkStream.Flush();
                                                                 if (!_consoleDisable)
                                                                 {
                                                                     string _result = System.Text.Encoding.UTF8.GetString(_bufferServer, 0, _len);
@@ -207,7 +207,7 @@ namespace ProxyServerMA
                                                                 }
                                                             }
                                                             else
-                                                                Thread.Sleep(1000);
+                                                                Thread.Sleep(1);
                                                         }
                                                         #region Error
                                                         catch
